@@ -48,6 +48,49 @@
         <-img src="img/application-8326_256.gif" alt="gif de aprovado em uma prova" width="300">.
          <mark><sup>obs:</sup>Sem os -.</mark><br>
         <img src="img/application-8326_256.gif" alt="gif de aprovado em uma prova" width="300">    
+    </p><hr>
+    <p>
+        <stong>-Imagem Clicavel</stong> <br>
+        Podemos tambem fazer imagens clicaveis, como se fossem botões, para fazer isso utilizamos o seguinte
+        sistema:<br>
+        <-a href="../index.html">.:<br>
+            <-img src="img/voltarpaginainicial.png" alt="Voltar PAgina Inicial">.<br>
+        <-/a>.<mark><sup>obs:</sup>Sem os -.</mark><br>
+        <a href="../index.html">
+            <img src="img/voltarpaginainicial.png" alt="Voltar PAgina Inicial">
+        </a>
+    </p>
+    <hr>
+    <p>
+        <strong>-Tag map</strong><br>
+        Nessa tag podemos mapear os itens de nossa imagem fazendo com que eles fiquem como um botão, assim sendo 
+        possivel acessar urls clicando em determinado item de sua image. Para realizarmos isso precisamos usar o 
+        seguinte site:<br>
+        https://www.image-map.net/ <br>
+        <a href="https://www.image-map.net/" target="_blank">Acessar Site</a><br>
+        Após acessarmos o site precisamos fazer o upload de nossa foto e cadastrar os ponto de acesso, selecionando
+        assim o objeto e logo em seguida selecionando o link de redirecionamento. <br>
+        Depois é só clicar no botão <strong><mark>Show Me The Code!</mark></strong>, e copiar o código para o nosso
+        arquivo.<br> 
+        Como demonstramos na prática a seguir:<br><hr>
+        <!-- Exemplo do Map Generate http://www.image-map.net/ -->
+            <-img src="img/fotoexemplo.jpg" usemap="#image-map">.<mark><sup>obs:</sup>Sem os -.</mark><br><hr>
+            <-map name="image-map"><hr>
+                <-area target="_blank" alt="Iphone" title="Iphone" href="https://apple.com" coords="11,111,62,52" 
+                shape="rect">.<mark><sup>obs:</sup>Sem os -.</mark><br><hr>
+                <-area target="_blank" alt="Prato de Comida" title="Prato de Comida" 
+                href="https://www.ifood.com.br/delivery/votorantim-sp/outback---shopping-iguatemi-esplanada-parque-
+                bela-vista/a455b173-18f3-4702-95eb-8ea4164668dc" 
+                coords="320,143,308,101,262,83,218,79,165,88,129,122,134,145,163,173,225,183,271,176,300,165" 
+                shape="poly">.<mark><sup>obs:</sup>Sem os -.</mark><br><hr>
+            <-/map>.<mark><sup>obs:</sup>Sem os -.</mark><br><hr>
+        
+        <img src="img/fotoexemplo.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="Iphone" title="Iphone" href="https://apple.com" coords="11,111,62,52" shape="rect">
+               <area target="_blank" alt="Prato de Comida" title="Prato de Comida" href="https://www.ifood.com.br/delivery/votorantim-sp/outback---shopping-iguatemi-esplanada-parque-bela-vista/a455b173-18f3-4702-95eb-8ea4164668dc" coords="320,143,308,101,262,83,218,79,165,88,129,122,134,145,163,173,225,183,271,176,300,165" shape="poly">
+        </map>  
     </p>
     <a href="../index.html"> Voltar Página Inicial</a>
     

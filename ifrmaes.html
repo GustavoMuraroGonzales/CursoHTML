@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Iframes</h1>
+    <p>
+        <Strong>Iframes</Strong><br>
+        Com esse recurso nos podemos visualizar outra página HTML externa dentro de nosso site.
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/nPEpaft1y1k?si=ctMt1rK7mMAlrf1M" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> 
+            </iframe><br>
+            Para adicionarmos o video acima usamos o código que o próprio youtube nos fornece, onde no vídeo
+            que queremos colocar apertamos em compartilhar e logo depois incorporar, então ele irá gerar um
+            códifo Inframe igual o abaixo:<br>
+            <-iframe width="500" height="315" src="https://www.youtube.com/embed/nPEpaft1y1k?si=ctMt1rK7mMAlrf1M" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> 
+            <-/iframe><br>
+            <mark><sup>obs:</sup>Sem os -.</mark><br>
+    </p>
+    <p>
+        Tambem podemos colocar com que um link abra um infame em nossa página. Usando o comando name="qualquer_nome"
+        e puxando ele do <-a href="paginadeexemplo.html" targer="qualquer_nome"<-/a>.
+            <mark><sup>obs:</sup>Sem os -.</mark><br>
+        Igual o Exemplo abaixo:
+        <a href="paginadeexemplo.html" target="qualquer_nome">Pagina de Exemplo</a>  
+        <br>
+        <iframe width="100%" style="border:none;" src="" name="qualquer_nome" tittle="Página de exemplo"></iframe>
+
+    </p>
+
+  <a href="../index.html"> Voltar Página Inicial</a>
+</body>
+</html>

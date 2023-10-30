@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <p>
+        Algumas das tags mais usadas para fazer Formulários são:<br>
+        <ul>
+            <li> <-form><-/form> - Tag Pai, Nosso formulário sempre deve estar dentro dessa tag.</li>
+            <li> <-label for="nome_id"> "Aparece no Site" <-/label>. </li>
+            <li> <-input id="Voce_escolhe" type="text"(caixinha de texto) placeholder="legenda_caixinha">.</li>
+            <li> <-input id="Voce_escolhe" type="password"(Caixinha de texto, porem oculta o conteudo) placeholder="digite sua senha">.</li> 
+            <li> <-input id="Voce_escolhe" type="email"(caixinha de texto, porem reconhece quando email. Precisa por @ e .) placeholder="digite seu email">.</li>
+            <li> <-input type="radio"(Bolinha de seleção, escolhe somente 1) id="Voce_escolhe" name="Voce_escolhe" value="Voce_escolhe"(será enviado pelo formulário para o BD)>.</li>  
+            <li> <-input type="checkbox"(caixinha de seleção, pode selecionar vários) id="Voce_escolhe" name="Voce_escolhe" Value="Voce_escolhe"(será enviado pelo formulário para o BD)>.</li>
+            <li> <-input type="submit"(caixinha de enviar formulario) value="Voce_escolhe"(será enviado pelo formulário para o BD)>. </li>                       
+            <li> <-select>(Open pai) <-option value="Voce_escolhe"(Será enviado pelo formulário para o BD)>"mensagem_que_será_mostrada"<-/option> <-/select>(close pai).</li>
+            <li> <-option selected(seleciona como principal) disabled(disabilita para seleção) value="deixa vazio">"o_que_a_Pessoa_Tem_que_escolher"<-/option>.</li>
+            <li> <-textarea required(campo precisa ser preenchido) name="Voce_escolhe" rows="10"(linhas) cols="60"(colunas) placeholder="legenda_caixinha"><-/textarea></li>
+            <li> <-button>(adiciona um botão qualquer)"nome_do_botao"<-/button></li>
+        </ul>
+        <mark><sup>obs:</sup>Sem os -.</mark><br>
+    </p>
+    <hr>
+       <form>
+            <h2> Dados da Pessoa (text) (email) (password) </h2>
+            <label for="campo_nome"> Nome:</label>
+            <input id="campo_nome" type="text" placeholder="digite seu nome">
+            <br><br>
+            <label for="campo_sobrenome"> Sobrenome: </label>
+            <input id="campo_sobrenome" type="text" placeholder="digite seu sobrenome">
+            <br><br>
+            <label for="campo_email"> Email: </label>
+            <input id="campo_email" type="email" placeholder="digite seu email">
+            <br><br>
+            <label for="campo_senha"> Senha: </label>
+            <input id="campo_senha" type="password" placeholder="digite sua senha">
+            <h2><strong>Sexo (radio) </strong></h2>
+            <input type="radio" id="Masculino" name="Sexo" value="Masculino">
+            <label for="Masculino"> Masculino</label><br>
+            <input type="radio" id="Feminino" name="Sexo" value="Feminino">
+            <label for="Feminino"> Feminino</label>
+            <h2><strong>Area de Atuação (checkbox)</strong></h2>
+            <input type="checkbox" id="Ti" name="Area de Atuação" Value="Ti">
+            <label for="Ti"> Ti</label><br>
+            <input type="checkbox" id="Administração" name="Area de Atuação" Value="Administração">
+            <label for="Administração"> Administração</label><br>
+            <input type="checkbox" id="Professor" name="Area de Atuação" Value="Professor">
+            <label for="Professor"> Professor</label><br>
+            <input type="checkbox" id="AudioVisual" name="Area de Atuação" Value="AudioVisual">
+            <label for="AudioVisual"> AudioVisual</label><br>
+            <br>
+            <h2>Escolha uma cor (select/option)</h2>
+            <select>
+                <option selected disabled value="">Selecione uma cor</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Azul">Azul</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Verde">Verde</option>
+            </select><br><br>
+             <h2>Fale sobre você (textearea)</h2>
+             <textarea required name="fale_sobre_voce" rows="10" cols="60" placeholder="Exemplo: Sou apaixonado por tecnologia!"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar Formulário">
+        </form><br>
+        <button>Teste</button>
+<hr>
+<a href="../index.html"> Voltar Página Inicial</a>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV e HTML Semâmtico</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .topo{
+            background-color: rgb(75, 168, 168);
+            padding:20px;
+            text-align: center;
+         }
+        .menu{
+            background-color:antiquewhite;
+            padding:5px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .menu a {
+            color:black;
+            text-decoration: none;
+        }
+        .conteudo1{
+            float: left;
+            width: 50%;
+            padding: 15px;
+
+        }
+        .link{
+            text-align: center;
+            background-color: antiquewhite;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <H1>Conceito DIV</H1>
+    <p>
+        O conceito do DIV consiste em dividir o nosso site em blocos como por exemplo: Topo, Menu, Conteúdo 1 e Conteúdo 2.<br>
+        A tag de DIV é <-div><-/div>.<mark><sup>obs:</sup>Sem os -.</mark> Podemos utilizar ela da maneira que está demonstrada aqui abaixo:<br>
+        A div sozinha não serve para muita coisa utilizamos ela para que fique mais fácil a organização do projeto HTML integrado com o CSS, por isso utilizam as div's juntamento com o HTML semântico, que consiste em trocar algumas div's por tags que tem o mesmo efeito com outro nome e deixa o nosso código mais fácil de ser interpretado. Como por exemplo:<br>
+        Mudar o nome da div do topo para header que significa topo, assim funcionando do mesmo jeito mas na hr da leitura mais fácil de ser interpretado.<br>
+        Outro exemplo: no menu, podemos trocar a tag div para nav.<br>
+        Mais um exemplo: podemos trocar as div's do conteudo pelo nome section.<br>
+        Tambem podemos utilizar a tag footer ao inves de div quando formos fazer o rodapé de nosso site.
+    </p>
+    <hr>
+    <div class="topo"> <!--TOPO-->
+        <h1>TOPO</h1>
+        <p>Aqui faz parte da div topo.</p>
+    </div>
+    <hr>
+    <div class="menu"> <!--MENU-->
+        <a href="paginadeexemplo.html">Link do Menu</a> &nbsp &nbsp <!--TAG de Espaço-->
+        <a href="paginadeexemplo.html">Link do Menu</a> &nbsp &nbsp <!--TAG de Espaço-->
+        <a href="paginadeexemplo.html">Link do Menu</a> &nbsp &nbsp <!--TAG de Espaço-->
+        <a href="paginadeexemplo.html">Link do Menu</a> &nbsp &nbsp <!--TAG de Espaço-->
+    </div>
+    <hr>
+    <div class="conteudo1"> <!--CONTEÚDO 1-->
+        <h2>Conteúdo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, minus exercitationem pariatur delectus numquam praesentium eos laudantium in quod, earum quibusdam, facere molestiae veritatis modi cupiditate! Quaerat ea eveniet rerum!</p>
+    </div>
+   
+    <div class="conteudo1"> <!--CONTEÚDO 2-->
+        <h2>Conteúdo 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, minus exercitationem pariatur delectus numquam praesentium eos laudantium in quod, earum quibusdam, facere molestiae veritatis modi cupiditate! Quaerat ea eveniet rerum!</p>
+    </div>
+    <br><br><hr>
+    <p>
+        O código acima ficaria dessa maneira:
+        <-div class="topo"(nome dado a essa div)> <!--TOPO--><br>
+            &nbsp <-h1>TOPO<-/h1><br>
+                &nbsp<-p>Aqui faz parte da div topo.<-/p><br>
+        <-/div><br>
+        <-hr><br>
+        <-div class="menu"(nome dado a essa div)> <!--MENU--><br>
+            &nbsp&nbsp <-a href="paginadeexemplo.html">Link do Menu<-/a> &nbsp &nbsp <!--TAG de Espaço--><br>
+            &nbsp&nbsp <-a href="paginadeexemplo.html">Link do Menu<-/a> &nbsp &nbsp <!--TAG de Espaço--><br>
+            &nbsp&nbsp <-a href="paginadeexemplo.html">Link do Menu<-/a> &nbsp &nbsp <!--TAG de Espaço--><br>
+            &nbsp&nbsp <-a href="paginadeexemplo.html">Link do Menu<-/a> &nbsp &nbsp <!--TAG de Espaço--><br>
+        <-/div><br>
+        <-hr><br>
+        <-div class="conteudo1"(nome dado a essa div)> <!--CONTEÚDO 1--><br>
+            &nbsp&nbsp <-h2>Conteúdo 1<-/h2><br>
+            &nbsp&nbsp <-p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, minus exercitationem pariatur delectus numquam praesentium eos laudantium in quod, earum quibusdam, facere molestiae veritatis modi cupiditate! Quaerat ea eveniet rerum!<-/p><br>
+        <-/div><br>
+        <-div class="conteudo1"(nome dado a essa div)> <!--CONTEÚDO 2--><br>
+            &nbsp&nbsp <-h2>Conteúdo 2<-/h2><br>
+            &nbsp&nbsp <-p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, minus exercitationem pariatur delectus numquam praesentium eos laudantium in quod, earum quibusdam, facere molestiae veritatis modi cupiditate! Quaerat ea eveniet rerum!<-/p><br>
+        <-/div><br>
+        <mark><sup>obs:</sup>Sem os -.</mark><br>
+        <strong>Porem para que ficasse dessa maneira mais organizada e bonita acrescentamos os seguintes códigos em css:</strong><br>
+        *{ (adicionar em todo a página)<br>
+            &nbsp&nbsp box-sizing: border-box;<br>
+        }<br>
+        body{ (adicionar em todo o corpo da página)<br>
+            &nbsp&nbsp margin: 0;<br>
+        }<br>
+        .topo{<br>
+            &nbsp&nbsp background-color: rgb(75, 168, 168);<br>
+            &nbsp&nbsp padding:20px;<br>
+            &nbsp&nbsp text-align: center;<br>
+         }<br>
+        .menu{<br>
+            &nbsp&nbsp background-color:antiquewhite;<br>
+            &nbsp&nbsp padding:5px;<br>
+            &nbsp&nbsp text-align: center;<br>
+            &nbsp&nbsp overflow: hidden;<br>
+        }<br>
+        .menu a {<br>
+            &nbsp&nbsp color:black;<br>
+            &nbsp&nbsp text-decoration: none;<br>
+        }<br>
+        .conteudo1{<br>
+            &nbsp&nbsp float: left;<br>
+            &nbsp&nbsp width: 50%;<br>
+            &nbsp&nbsp padding: 15px;<br>
+
+        }<br>
+        .link{<br>
+            &nbsp&nbsp text-align: center;<br>
+            &nbsp&nbsp background-color: antiquewhite;<br>
+            &nbsp&nbsp text-decoration: none;<br>
+            &nbsp&nbsp color: black;<br>
+        }<br>
+        <mark><sup>obs:</sup>Sem os ().</mark><br>
+    </p>
+    <br><br><hr>
+    <div class="link"> <!--Link Voltar página inicial-->
+        <a href="../index.html"> Voltar Página Inicial</a>
+    </div>
+    
+    <hr>
+</body>
+</html>
